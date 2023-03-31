@@ -1,0 +1,15 @@
+﻿@page "/"
+
+@{
+    ViewBag.Title = "Home page";
+}
+
+<div class="d-flex flex-fill flex-column gap-4 justify-content-center align-items-center text-center">
+    <div>
+        <h1>Welcome to Razor + Blazor WASM</h1>
+        <p>This page was rendered from Server-Side using Razor Pages 🔥</p>
+    </div>
+
+    <component type="typeof(Counter)" render-mode="WebAssemblyPrerendered" />
+</div>
+
